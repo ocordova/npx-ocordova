@@ -1,0 +1,29 @@
+{
+    "name": "ocordova",
+    "version": "1.0.0",
+    "main": "index.js",
+    "bin": {
+        "ocordova": "./lib/cli.js"
+    },
+    "engines": {
+        "node": ">=10"
+    },
+    "files": [
+        "/lib"
+    ],
+    "scripts": {
+        "start": "ts-node ./src/cli.ts",
+        "prebuild": "rm -rf lib",
+        "build": "npm run prebuild && tsc -b"
+    },
+    "dependencies": {
+        "@types/react": "^17.0.37",
+        "ink": "^3.2.0",
+        "react": "^17.0.2",
+        "typescript": "^4.5.3"
+    },
+    "devDependencies": {
+        "@types/node": "^16.11.12",
+        "ts-node": "^10.4.0"
+    }
+}
