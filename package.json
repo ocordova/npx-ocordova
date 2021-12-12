@@ -1,9 +1,16 @@
 {
     "name": "ocordova",
-    "version": "1.0.1",
+    "description": "About ocordova CLI",
+    "author": "ocordova",
+    "homepage": "https://www.ocordova.me/",
+    "version": "1.0.2",
     "main": "index.js",
     "bin": {
         "ocordova": "./lib/cli.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ocordova/npx-ocordova.git"
     },
     "engines": {
         "node": ">=10"
